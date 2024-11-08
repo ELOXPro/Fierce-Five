@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animate-spin-slow {
+  animation: spin-slow 24s linear infinite;
+}
+
+.yborder {
+  background: url("/src/assets/back.png") repeat;
+  background-size: 12.5%;
+}
+
+.yback {
+  background: url("/src/assets/yellow back.jpg") repeat;
+  background-size: 25%;
+}
+
+.teamback {
+  background: url("/src/assets/hero road.jpg") repeat;
+  background-size: 100%;
+}
+
+.glow-effect {
+  filter: drop-shadow(0 0 15px rgba(0, 153, 255, 0.6))
+    drop-shadow(0 0 25px rgba(0, 153, 255, 0.4));
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: "toony";
+  src: url(/src/fonts/toonyline.otf);
+}
+@font-face {
+  font-family: "stitch";
+  src: url(/src/fonts/stitch.otf);
+}

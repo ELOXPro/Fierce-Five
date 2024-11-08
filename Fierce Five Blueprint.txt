@@ -1,0 +1,38 @@
+1.Requirements:
+- ViteJs/ Typescript
+- Framer Motion: for Animations
+- Tailwind CSS: for Styling
+- Aceternity UI: for Cool UI Elements
+- Shadcn UI: for UI Elements
+
+2.Theme:
+- Primary color: Red
+- Secondary Color: White
+- Teritiary Color: Black
+
+3.Nav-Menu:
+- Home
+- Team
+- Challenges(5 Pages):
+ - Introduction: The Fierce Five
+ - Discover Africa: Orango Tribe
+ - Help-Lab: Khan Academy
+ - Hunt for Treasure: a Visit in The Mines
+ - Mission Launch V2: 
+- Archive
+
+4.1.Home Page:
+- Hero Section
+- Our Mission
+- Our Problem
+- The Solution
+- Team Overview
+- Contact Us
+
+4.2.Team Page:
+- Member's card: 
+ - Bio tab
+ - Contacts
+
+4.3. Archive:
+ - Gallery Of Each Challenge (10 pics Each)
