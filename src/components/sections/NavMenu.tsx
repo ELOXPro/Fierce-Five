@@ -2,7 +2,7 @@ export default function NavMenu() {
   const menuItems = ["Home", "Team", "Challenges", "Archive"];
 
   return (
-    <div className="flex w-full h-auto justify-between font-toony">
+    <div className="flex w-full h-auto justify-between">
       <img
         className="w-[20%] md:w-[12%] lg:w-[6%] h-auto px-1 bg-yellow-400 m-1 rounded-md mix-blend-multiply"
         src="/src/assets/logo.jpg"
@@ -12,7 +12,7 @@ export default function NavMenu() {
         {menuItems.map((item, index) => (
           <button
             key={index}
-            className="relative text-base tracking-normal text-black hover:opacity-75 transition-all font-bold"
+            className="relative text-base tracking-normal font-toony text-black hover:opacity-75 transition-all font-bold"
           >
             <h1 className="absolute w-full h-full flex items-center justify-center ">
               {item}
