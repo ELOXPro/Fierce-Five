@@ -19,7 +19,7 @@ export default function NavMenu() {
             </h1>
             <img
               className="w-full h-12"
-              src="/src/assets/yellow button.png"
+              src="assets/yellow button.png"
               alt="Menu Button"
             />
           </button>
