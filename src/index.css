@@ -6,18 +6,28 @@
   animation: spin-slow 24s linear infinite;
 }
 
-.yborder {
-  background: url("/src/assets/back.png") repeat;
+.div-border {
+  background: url("/assets/back.png") repeat;
   background-size: 12.5%;
 }
 
-.yback {
-  background: url("/src/assets/yellow back.jpg") repeat;
+.menu-button-bg {
+  background: url("/assets/back.png");
+  background-size: 100%;
+}
+
+.title-bg {
+  background: url("/assets/yellow back.jpg") repeat;
   background-size: 25%;
 }
 
-.teamback {
-  background: url("/src/assets/hero road.jpg") repeat;
+.orange-bg {
+  background: url("/assets/orange background.jpg") repeat;
+  background-size: 100%;
+}
+
+.blue-bg {
+  background: url("/assets/blue background.jpg") repeat;
   background-size: 100%;
 }
 
@@ -37,9 +47,13 @@
 
 @font-face {
   font-family: "toony";
-  src: url(/src/fonts/toonyline.otf);
+  src: url(/fonts/toonyline.otf);
 }
 @font-face {
   font-family: "stitch";
-  src: url(/src/fonts/stitch.otf);
+  src: url(/fonts/stitch.otf);
+}
+@font-face {
+  font-family: "jackpot";
+  src: url(/fonts/jackpot.otf);
 }

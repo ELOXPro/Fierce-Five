@@ -6,9 +6,11 @@ export default {
       fontFamily: {
         toony: ["toony", "sans-serif"],
         stitch: ["stitch", "sans-serif"],
+        jackpot: ["jackpot", "sans-serif"],
       },
       backgroundImage: {
-        'orangeback': "url('/src/assets/orange background.jpg')",
+        'orangeback': "url('/assets/orange background.jpg')",
+        'button': ["url('/assets/back.png')", ],
       },
     },
   },

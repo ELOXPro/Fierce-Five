@@ -1,15 +1,9 @@
-import NavMenu from "./NavMenu";
-
 export default function Hero() {
   return (
     <div className="relative w-full h-screen flex flex-col overflow-hidden">
-      <div className="fixed top-0 left-0 w-full z-20">
-        <NavMenu />
-      </div>
-
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        src="/src/assets/Hero Background.mp4"
+        src="/assets/Hero Background.mp4"
         autoPlay
         loop
         muted
@@ -19,7 +13,7 @@ export default function Hero() {
       <div className="relative w-full h-full flex flex-col items-center justify-center z-10">
         <img
           className="absolute w-4/5 lg:w-1/3 animate-spin-slow glow-effect"
-          src="/src/assets/globe.png"
+          src="/assets/globe.png"
           alt="Spinning Globe"
         />
 

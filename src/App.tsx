@@ -1,14 +1,18 @@
-import Home from './pages/Home'
+import NavMenu from "./components/sections/NavMenu";
+import Home from "./pages/Home";
+//import { Navigate, Route, Routes } from 'react-router-dom';
 
 function App() {
-
   return (
     <>
-    <div>
-      <Home />
-    </div>
+      <div>
+        <div className="fixed top-0 left-0 w-full z-20">
+          <NavMenu />
+        </div>
+        <Home />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
