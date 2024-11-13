@@ -1,6 +1,5 @@
 import {
   ChallengeCard,
-  MemberCard,
   SectionBorder,
   SectionTitle,
 } from "../ui/elements";
