@@ -1,7 +1,7 @@
 import { MenuButton } from "../ui/elements";
 
 export default function NavMenu() {
-  const menuItems = ["Home", "About Us", "Challenges", "The Project"];
+  const menuItems = ["Home", "About Us", "The Project"];
 
   return (
     <div className="flex w-full h-full justify-between items-center">
@@ -10,7 +10,7 @@ export default function NavMenu() {
         src="/assets/logo.jpg"
         alt="Logo"
       />
-      <div className="hidden lg:grid grid-cols-4 w-1/2 h-full gap-2 m-1">
+      <div className="hidden lg:grid grid-cols-3 w-1/2 h-full gap-2 m-1">
         {menuItems.map((item, index) => (
           <MenuButton title = {item} key={index}/>
         ))}

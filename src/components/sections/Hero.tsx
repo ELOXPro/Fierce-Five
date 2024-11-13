@@ -3,7 +3,7 @@ export default function Hero() {
     <div className="relative w-full h-screen flex flex-col overflow-hidden">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        src="/assets/Hero Background.mp4"
+        src="/assets/hero back.mp4"
         autoPlay
         loop
         muted

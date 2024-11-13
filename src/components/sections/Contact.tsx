@@ -13,7 +13,7 @@ export default function Team() {
                 <div className="">
                   <label className="">Full Name</label>
                   <input
-                    className="w-full shadow-blue-500 shadow-lg appearance-none border rounded py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                    className="w-full shadow-black shadow-lg appearance-none border rounded py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                     id="name"
                     name="names"
                     placeholder="Names"
@@ -22,7 +22,7 @@ export default function Team() {
                 <div className="">
                   <label className="">Email</label>
                   <input
-                    className="w-full shadow-blue-500 shadow-lg appearance-none border rounded py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                    className="w-full shadow-black shadow-lg appearance-none border rounded py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                     id="email"
                     type="email"
                     name="email"
@@ -32,13 +32,13 @@ export default function Team() {
                 <div className="">
                   <label className="">Message</label>
                   <textarea
-                    className="w-full shadow-blue-500 shadow-lg appearance-none border rounded py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                    className="w-full shadow-black shadow-lg appearance-none border rounded py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                     id="message"
                     name="message"
                     placeholder="Your message here"
                   />
                 </div>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between m-2">
                   <MenuButton title="Submit" />
                 </div>
               </form>
@@ -58,21 +58,21 @@ export default function Team() {
             <GreenTitle flip={false} title="Social Medias" />
             <button>
               <img
-                className="w-10 h-auto glow-effect"
+                className="w-10 h-auto glow-effect hover:animate-pulse"
                 src="/assets/instagram.png"
                 alt="instagram"
               />
             </button>
             <button>
               <img
-                className="w-12 h-auto glow-effect"
+                className="w-12 h-auto glow-effect hover:animate-pulse"
                 src="/assets/youtube.png"
                 alt="youtube"
               />
             </button>
             <button>
               <img
-                className="w-10 h-auto glow-effect"
+                className="w-10 h-auto glow-effect hover:animate-pulse"
                 src="/assets/email.png"
                 alt="email"
               />

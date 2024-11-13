@@ -8,11 +8,7 @@ export default {
         stitch: ["stitch", "sans-serif"],
         jackpot: ["jackpot", "sans-serif"],
         extra: ["extra", "sans-serif"],
-      },
-      backgroundImage: {
-        orangeback: "url('/assets/orange background.jpg')",
-        button: ["url('/assets/back.png')"],
-      },
+      }
     },
   },
   plugins: [],

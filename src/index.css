@@ -47,8 +47,13 @@
   background-size: 100%;
 }
 
+.orange-bg2 {
+  background: url("/assets/orange background2.jpg") repeat;
+  background-size: 100%;
+}
+
 .blue-bg {
-  background: url("/assets/blue background.jpg") repeat;
+  background: url("/assets/black background.png") repeat;
   background-size: 100%;
 }
 

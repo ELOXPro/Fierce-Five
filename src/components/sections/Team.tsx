@@ -5,7 +5,7 @@ export default function Team() {
     {
       name: "benitha rugwiro",
       imageUrl: "/assets/benitha.jpeg",
-      role: "team manager",
+      role: "team leader",
     },
     {
       name: "eloi iradukunda",
@@ -15,12 +15,12 @@ export default function Team() {
     {
       name: "nero kayonga",
       imageUrl: "/assets/nero.jpg",
-      role: "tasks manager",
+      role: "organiser",
     },
     {
       name: "julie uwineza",
       imageUrl: "/assets/julie.JPG",
-      role: "research Manager",
+      role: "secretary",
     },
     {
       name: "shadrack nziza",
@@ -29,21 +29,20 @@ export default function Team() {
     },
   ];
 
-  // Duplicate the array to create a seamless loop effect
   const infiniteTeam = [...team, ...team];
 
   return (
-    <div className="flex flex-col w-full h-auto blue-bg">
+    <div className="flex flex-col w-full h-auto bg-zinc-800">
       <SectionBorder />
-      <div className="flex flex-col w-full justify-start items-center gap-6 bg-zinc-500 bg-opacity-15 py-4">
+      <div className="flex flex-col w-full justify-start items-center gap-6 py-4">
         <SectionTitle title="the team" />
-        <h1 className="text-xl text-pretty font-bold text-white text-center px-4">
+        <h1 className="text-xl text-pretty font-bold text-yellow-400 text-center px-4">
           Meet the people behind the wheels, driven by the change they want to
           make to the world.
         </h1>
 
         <div className="overflow-hidden w-full h-64">
-          <div className="overflow-hidden w-[1280px] h-full relative">
+          <div className="overflow-hidden min-w-[1280px] h-full relative">
             <div className="flex animate-infinite-scroll">
               {infiniteTeam.map((item, index) => (
                 <MemberCard

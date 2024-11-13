@@ -1,9 +1,11 @@
 export const MenuButton = ({ title }: { title: string }) => {
   return (
-    <button className="flex w-full h-full text-base hover:tracking-wide font-toony p-1 menu-button-bg bg-yellow-400 hover:bg-white hover:shadow-white  text-black transition-all font-bold overflow-hidden shadow-lg shadow-yellow-500">
+    <button className="flex w-full h-full text-base hover:tracking-wide font-toony p-1 menu-button-bg bg-yellow-400 hover:bg-white hover:shadow-white transition-all overflow-hidden shadow-lg shadow-yellow-500">
       <h1
         className={`flex w-full h-full ${
-          title === "The Project" ? "bg-orange-500" : "bg-yellow-400"
+          title === "The Project"
+            ? "bg-black text-white hover:text-black"
+            : "bg-yellow-400 text-black"
         } hover:bg-inherit transition-all justify-center`}
       >
         {title}
@@ -82,3 +84,34 @@ export const MemberCard = ({
     </div>
   );
 };
+
+export const ChallengeCard = ({
+  name,
+  url,
+  pic,
+  challenge,
+  description,
+}: {
+  name: string;
+  url: string;
+  pic: string;
+  challenge: string;
+  description: string;
+}) => {
+  return (
+    <div className="relative w-full h-full menu-button-bg rounded-md shadow-lg shadow-zinc-700 overflow-hidden">
+      <div className="absolute top-2 right-2 bg-yellow-400 text-zinc-900 text-xs font-bold py-1 px-2 rounded-md shadow-md">
+        Challenge {challenge}
+      </div>
+      <div className="flex flex-col w-full h-full justify-start items-center gap-1 rounded-md overflow-hidden">
+        <img src={pic} className="w-full h-1/2 object-cover" alt="Challenge Picture" />
+        <div className="flex flex-col w-full h-1/2 py-2 bg-zinc-900 text-yellow-400 gap-4">
+          <h1 className="text-xl bg-black font-toony capitalize mr-4 pl-1">{name}</h1>
+          <h1 className="text-xs text-white px-2">{description}</h1>
+          <a href={url} className="flex w-24 h-auto ml-2 justify-center items-center text-sm text-black hover:tracking-wide font-toony p-1 bg-yellow-400 transition-all rounded-md">Watch</a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
