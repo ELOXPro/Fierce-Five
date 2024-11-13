@@ -4,7 +4,7 @@ export default function Team() {
   const team = [
     {
       name: "benitha rugwiro",
-      imageUrl: "/assets/logo.jpg",
+      imageUrl: "/assets/benitha.jpeg",
       role: "team manager",
     },
     {
@@ -14,34 +14,48 @@ export default function Team() {
     },
     {
       name: "nero kayonga",
-      imageUrl: "/assets/benitha.jpg",
+      imageUrl: "/assets/nero.jpg",
       role: "tasks manager",
     },
     {
       name: "julie uwineza",
-      imageUrl: "/assets/benitha.jpg",
-      role: "well being",
+      imageUrl: "/assets/julie.JPG",
+      role: "research Manager",
     },
     {
       name: "shadrack nziza",
-      imageUrl: "/assets/benitha.jpg",
-      role: "researcher",
+      imageUrl: "/assets/shadrack.jpg",
+      role: "finance manager",
     },
   ];
+
+  // Duplicate the array to create a seamless loop effect
+  const infiniteTeam = [...team, ...team];
+
   return (
-    <div className="flex flex-col  w-full h-auto blue-bg ">
+    <div className="flex flex-col w-full h-auto blue-bg">
       <SectionBorder />
-      <div className="flex flex-col w-full h-full justify-start items-center gap-6 bg-zinc-500 bg-opacity-15 p-4">
+      <div className="flex flex-col w-full justify-start items-center gap-6 bg-zinc-500 bg-opacity-15 py-4">
         <SectionTitle title="the team" />
-        <h1 className=" text-xl text-pretty font-bold text-white text-center px-4">
+        <h1 className="text-xl text-pretty font-bold text-white text-center px-4">
           Meet the people behind the wheels, driven by the change they want to
           make to the world.
         </h1>
-        <div className="grid grid-cols-5 w-full h-full gap-2">
-        {team.map((item, index) => (
-          <MemberCard name = {item.name} url={item.imageUrl} role={item.role} key={index}/>
-        ))}
-      </div>
+
+        <div className="overflow-hidden w-full h-64">
+          <div className="overflow-hidden w-[1280px] h-full relative">
+            <div className="flex animate-infinite-scroll">
+              {infiniteTeam.map((item, index) => (
+                <MemberCard
+                  name={item.name}
+                  url={item.imageUrl}
+                  role={item.role}
+                  key={index}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

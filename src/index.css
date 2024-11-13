@@ -11,9 +11,30 @@
   background-size: 12.5%;
 }
 
+.footer-border {
+  background: url("/assets/footer-border.png") repeat;
+  background-size: 25%;
+}
+
+
 .menu-button-bg {
   background: url("/assets/back.png");
   background-size: 100%;
+}
+
+.green-title {
+  background: url("/assets/green arrowed button.png");
+  background-size: 100%;
+}
+
+.road-bg {
+  background: url("/assets/road-bg.jpg") repeat;
+  background-size: 50%;
+}
+
+.profile-bg {
+  background: url("/assets/back.png");
+  background-size: 400%;
 }
 
 .title-bg {
@@ -32,8 +53,14 @@
 }
 
 .glow-effect {
-  filter: drop-shadow(0 0 15px rgba(0, 153, 255, 0.6))
-    drop-shadow(0 0 25px rgba(0, 153, 255, 0.4));
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.6))
+    drop-shadow(0 0 25px rgba(255, 251, 1, 0.4));
+}
+
+.animate-infinite-scroll {
+  display: flex;
+  width: 200%;
+  animation: infinite-scroll 20s linear infinite;
 }
 
 @keyframes spin-slow {
@@ -42,6 +69,14 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 
@@ -55,5 +90,9 @@
 }
 @font-face {
   font-family: "jackpot";
-  src: url(/fonts/jackpot.otf);
+  src: url(/fonts/jackpot.ttf);
+}
+@font-face {
+  font-family: "extra";
+  src: url(/fonts/extra.ttf);
 }

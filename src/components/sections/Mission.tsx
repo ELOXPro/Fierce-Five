@@ -2,11 +2,11 @@ import { SectionBorder, SectionTitle } from "../ui/elements";
 
 export default function Mission() {
   return (
-    <div className="flex flex-col  w-full h-auto orange-bg ">
+    <div className="flex flex-col  w-full h-auto orange-bg">
       <SectionBorder/>
-      <div className="flex flex-col w-full h-full justify-center items-center gap-6 bg-zinc-500 bg-opacity-15 p-4">
+      <div className="flex flex-col w-full h-full justify-center items-center gap-6 bg-black bg-opacity-10 p-4">
         <SectionTitle title="our mission" />
-        <h1 className=" text-xl text-pretty font-bold text-white text-center px-4">
+        <h1 className=" text-lg text-pretty font-bold text-black text-center px-4">
           Our mission is to advocate for improved infrastructure in local
           communities through improved visibility and best practices in
           sustainability regarding natural resource use. We focus on access to

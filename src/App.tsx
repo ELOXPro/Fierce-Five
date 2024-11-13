@@ -1,3 +1,4 @@
+import Footer from "./components/sections/Footer";
 import NavMenu from "./components/sections/NavMenu";
 import Home from "./pages/Home";
 //import { Navigate, Route, Routes } from 'react-router-dom';
@@ -10,6 +11,7 @@ function App() {
           <NavMenu />
         </div>
         <Home />
+        <Footer/>
       </div>
     </>
   );

@@ -10,7 +10,7 @@ export default function NavMenu() {
         src="/assets/logo.jpg"
         alt="Logo"
       />
-      <div className="hidden lg:grid grid-cols-4 w-1/2 h-full gap-2">
+      <div className="hidden lg:grid grid-cols-4 w-1/2 h-full gap-2 m-1">
         {menuItems.map((item, index) => (
           <MenuButton title = {item} key={index}/>
         ))}
