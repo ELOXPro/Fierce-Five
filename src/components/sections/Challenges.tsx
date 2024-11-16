@@ -51,7 +51,7 @@ export default function Challenges() {
   return (
     <div className="flex flex-col w-full h-auto blue-bg">
       <SectionBorder />
-      <div className="flex flex-col w-full justify-start items-center gap-6 bg-zinc-800 py-4">
+      <div className="flex flex-col w-full justify-start items-center gap-6 blue-bg py-4">
         <SectionTitle title="the challenges" />
         <h1 className="text-xl text-pretty font-bold text-yellow-400 text-center px-4">
           a Recap of our E-LAB Journey through the video challenges.

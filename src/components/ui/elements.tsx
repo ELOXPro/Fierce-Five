@@ -1,12 +1,19 @@
-export const MenuButton = ({ title }: { title: string }) => {
+type MenuButtonProps = {
+  title: string;
+  isActive: boolean;
+};
+
+export const MenuButton = ({ title, isActive }: MenuButtonProps) => {
   return (
-    <button className="flex w-full h-full text-base hover:tracking-wide font-toony p-1 menu-button-bg bg-yellow-400 hover:bg-white hover:shadow-white transition-all overflow-hidden shadow-lg shadow-yellow-500">
+    <button
+      className={`flex w-full h-full text-base hover:tracking-wide font-toony p-1 menu-button-bg transition-all overflow-hidden shadow-lg`}
+    >
       <h1
-        className={`flex w-full h-full ${
-          title === "The Project"
-            ? "bg-black text-white hover:text-black"
-            : "bg-yellow-400 text-black"
-        } hover:bg-inherit transition-all justify-center`}
+        className={`flex w-full h-full text-base hover:tracking-wide font-toony p-1 justify-center items-center transition-all ${
+          isActive
+            ? "bg-zinc-900 text-white tracking-wide"
+            : "bg-yellow-400 text-black hover:bg-white"
+        }`}
       >
         {title}
       </h1>
@@ -104,14 +111,24 @@ export const ChallengeCard = ({
         Challenge {challenge}
       </div>
       <div className="flex flex-col w-full h-full justify-start items-center gap-1 rounded-md overflow-hidden">
-        <img src={pic} className="w-full h-1/2 object-cover" alt="Challenge Picture" />
-        <div className="flex flex-col w-full h-1/2 py-2 bg-zinc-900 text-yellow-400 gap-4">
-          <h1 className="text-xl bg-black font-toony capitalize mr-4 pl-1">{name}</h1>
+        <img
+          src={pic}
+          className="w-full h-1/2 object-cover"
+          alt="Challenge Picture"
+        />
+        <div className="flex flex-col w-full h-1/2 py-2 bg-zinc-950 text-yellow-400 gap-4">
+          <h1 className="text-xl bg-black font-toony capitalize mr-4 pl-1">
+            {name}
+          </h1>
           <h1 className="text-xs text-white px-2">{description}</h1>
-          <a href={url} className="flex w-24 h-auto ml-2 justify-center items-center text-sm text-black hover:tracking-wide font-toony p-1 bg-yellow-400 transition-all rounded-md">Watch</a>
+          <a
+            href={url}
+            className="flex w-24 h-auto ml-2 justify-center items-center text-sm text-black hover:tracking-wide font-toony p-1 bg-yellow-400 transition-all rounded-md"
+          >
+            Watch
+          </a>
         </div>
       </div>
     </div>
   );
 };
-

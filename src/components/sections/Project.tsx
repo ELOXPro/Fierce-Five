@@ -15,7 +15,7 @@ export default function Project() {
             campaigns that will teach the truck drivers and the local community
             how to maintain these roads.
           </h1>
-          <a href="#" className="flex w-24 h-auto ml-2 justify-center items-center text-sm text-black hover:tracking-wide font-toony p-1 bg-yellow-400 transition-all rounded-md">Read More</a>
+          <a href="/projects" className="flex w-24 h-auto ml-2 justify-center items-center text-sm text-black hover:tracking-wide font-toony p-1 bg-yellow-400 transition-all rounded-md">Read More</a>
         </div>
         <img
           src="/assets/curve.png"

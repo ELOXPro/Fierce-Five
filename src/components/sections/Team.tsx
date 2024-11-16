@@ -32,7 +32,7 @@ export default function Team() {
   const infiniteTeam = [...team, ...team];
 
   return (
-    <div className="flex flex-col w-full h-auto bg-zinc-800">
+    <div className="flex flex-col w-full h-auto blue-bg">
       <SectionBorder />
       <div className="flex flex-col w-full justify-start items-center gap-6 py-4">
         <SectionTitle title="the team" />

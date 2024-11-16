@@ -1,33 +1,24 @@
-export default function Problem() {
+import { SectionBorder, SectionTitle } from "../ui/elements";
+
+export default function Solution() {
   return (
-    <div className="flex flex-col w-full h-auto bg-orange-500 justify-start">
-      <div className="w-full h-[14px] yborder" />
-      <div className="flex w-full h-full gap-2">
-        <div className="flex w-1/2 h-full justify-center">
-          <img
-            className="w-2/3 h-auto"
-            src="/src/assets/solution.png"
-            alt="Menu Button"
-          />
-        </div>
-        <div className="flex flex-col gap-6 w-1/2 p-6">
-          <div className="relative w-64 h-12 text-2xl text-black">
-            <h1 className="absolute w-full h-full flex items-center justify-center font-black">
-              Solution
-            </h1>
-            <div className="w-full h-full yback" />
-          </div>
-          <h1 className=" text-xl text-pretty font-semibold text-white">
-            Our mission is to advocate for improved infrastructure in local
-            communities through improved visibility and best practices in
-            sustainability regarding natural resource use. We focus on access to
-            clean water, reliable energy, efficient waste management, and
-            resilient transportation systems. In doing this, we enable growth in
-            the community in a sustainable manner with an improved quality of
-            life by working at the grass-roots level with community members,
-            governments, and private organizations.
-          </h1>
-        </div>
+    <div className="flex flex-col w-full h-auto orange-bg2 justify-start">
+      <SectionBorder />
+      <div className="flex flex-col w-full h-full justify-center items-center gap-6 bg-black bg-opacity-10 p-4">
+        <SectionTitle title="Solution Statement" />
+        <h1 className=" text-base text-center text-pretty font-semibold text-zinc-800">
+          We have come up with a solution of combining recycled asphalt ,
+          crushed stones, and gravel stones to harden the road against hazards
+          like heavy rainfall and also build retaining holes to redirect the
+          water from damaging the roads. In addition, we will introduce
+          campaigns that will teach the truck drivers and the local community
+          how to maintain these roads.
+        </h1>
+        <img
+          className="w-1/2 h-auto border-4 border-zinc-800 rounded-md"
+          src="/assets/plan.png"
+          alt="The Plan"
+        />
       </div>
     </div>
   );

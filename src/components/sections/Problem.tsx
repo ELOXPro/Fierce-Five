@@ -1,15 +1,12 @@
+import { SectionBorder, SectionTitle } from "../ui/elements";
+
 export default function Problem() {
   return (
-    <div className="flex flex-col w-full h-auto bg-cyan-500 justify-start">
-      <div className="w-full h-[14px] yborder" />
+    <div className="flex flex-col w-full h-auto blue-bg justify-start">
+      <SectionBorder />
       <div className="flex w-full h-full gap-2 items-center">
         <div className="flex flex-col gap-6 w-1/2 p-6">
-          <div className="relative w-64 h-12 text-2xl text-black">
-            <h1 className="absolute w-full h-full flex items-center justify-center font-black">
-              Problem Statement
-            </h1>
-            <div className="w-full h-full yback" />
-          </div>
+          <SectionTitle title="Problem Statement" />
           <h1 className=" text-base text-pretty font-semibold text-white">
             In the Democratic republic of Congo(DRC),they are currently facing
             infranstructure as a big challenge,specifically road transport in
@@ -34,8 +31,8 @@ export default function Problem() {
         <div className="flex w-1/2 h-full justify-center">
           <img
             className="w-2/3 h-auto"
-            src="/src/assets/problem.png"
-            alt="Menu Button"
+            src="/assets/problem.png"
+            alt="Problem"
           />
         </div>
       </div>
