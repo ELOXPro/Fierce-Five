@@ -39,7 +39,7 @@ export default function Team() {
                   />
                 </div>
                 <div className="flex items-center justify-between m-2">
-                  <MenuButton title="Submit" />
+                  <MenuButton isActive={false} title="Submit" />
                 </div>
               </form>
             </div>
