@@ -56,27 +56,20 @@ export default function Team() {
           </div>
           <div className="flex gap-6">
             <GreenTitle flip={false} title="Social Medias" />
-            <button>
+            <a href="https://www.instagram.com/fie.rcefive/" className="flex items-center justify-center">
               <img
                 className="w-10 h-auto glow-effect hover:animate-pulse"
                 src="/assets/instagram.png"
                 alt="instagram"
               />
-            </button>
-            <button>
+            </a>
+            <a href="https://www.youtube.com/@fierce-5/videos" className="flex items-center justify-center">
               <img
                 className="w-12 h-auto glow-effect hover:animate-pulse"
                 src="/assets/youtube.png"
                 alt="youtube"
               />
-            </button>
-            <button>
-              <img
-                className="w-10 h-auto glow-effect hover:animate-pulse"
-                src="/assets/email.png"
-                alt="email"
-              />
-            </button>
+            </a>
           </div>
         </div>
       </div>
