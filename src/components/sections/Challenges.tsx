@@ -53,10 +53,10 @@ export default function Challenges() {
       <SectionBorder />
       <div className="flex flex-col w-full justify-start items-center gap-6 blue-bg py-4">
         <SectionTitle title="the challenges" />
-        <h1 className="text-xl text-pretty font-bold text-yellow-400 text-center px-4">
+        <h1 className="text-base md:text-lg lg:text-xl text-pretty font-bold text-yellow-400 text-center px-4">
           a Recap of our E-LAB Journey through the video challenges.
         </h1>
-        <div className="grid grid-cols-5 p-2 gap-2 w-full h-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 p-2 gap-4 md:gap-2 w-full h-auto">
           {challenges.map((item, index) => (
             <ChallengeCard
               name={item.name}

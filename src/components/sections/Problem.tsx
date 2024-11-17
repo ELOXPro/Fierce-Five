@@ -4,10 +4,10 @@ export default function Problem() {
   return (
     <div className="flex flex-col w-full h-auto blue-bg justify-start">
       <SectionBorder />
-      <div className="flex w-full h-full gap-2 items-center">
-        <div className="flex flex-col gap-6 w-1/2 p-6">
+      <div className="flex flex-col md:flex-roww-full h-full gap-2 items-center">
+        <div className="flex flex-col gap-6 w-full lg:w-1/2 p-6">
           <SectionTitle title="Problem Statement" />
-          <h1 className=" text-base text-pretty font-semibold text-white">
+          <h1 className="text-sm md:text-base text-pretty text-white">
             In the Democratic republic of Congo(DRC),they are currently facing
             infranstructure as a big challenge,specifically road transport in
             Katanga district in the southern part of DRC.The roads started to

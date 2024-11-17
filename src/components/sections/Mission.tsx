@@ -6,7 +6,7 @@ export default function Mission() {
       <SectionBorder/>
       <div className="flex flex-col w-full h-full justify-center items-center gap-6 bg-black bg-opacity-10 p-4">
         <SectionTitle title="our mission" />
-        <h1 className=" text-lg text-pretty font-bold text-black text-center px-4">
+        <h1 className="text-sm md:text-base lg:text-lg text-pretty font-bold text-black text-center px-4">
           Our mission is to advocate for improved infrastructure in local
           communities through improved visibility and best practices in
           sustainability regarding natural resource use. We focus on access to

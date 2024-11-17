@@ -5,9 +5,9 @@ export default function Project() {
     <div className="flex flex-col w-full h-auto orange-bg2">
       <SectionBorder />
       <div className="flex w-full h-full">
-        <div className="flex flex-col w-2/3 h-full justify-center items-center gap-2 p-4">
+        <div className="flex flex-col w-full lg:w-1/2 h-full justify-center items-center gap-4 p-4">
           <SectionTitle title="our project" />
-          <h1 className=" text-lg text-pretty font-bold text-black text-center px-4">
+          <h1 className="text-sm md:text-base text-pretty font-bold text-black text-center px-4">
             We have come up with a solution of combining recycled asphalt,
             crushed stones, and gravel stones to harden the road against hazards
             like heavy rainfall and also build retaining holes to redirect the
@@ -19,7 +19,7 @@ export default function Project() {
         </div>
         <img
           src="/assets/curve.png"
-          className="w-1/3 h-full object-cover"
+          className="hidden lg:flex w-1/2 h-full object-cover"
           alt="Challenge Picture"
         />
       </div>

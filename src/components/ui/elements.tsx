@@ -106,7 +106,7 @@ export const ChallengeCard = ({
   description: string;
 }) => {
   return (
-    <div className="relative w-full h-full menu-button-bg rounded-md shadow-lg shadow-zinc-700 overflow-hidden">
+    <div className="relative w-full h-[400px] menu-button-bg rounded-md shadow-lg shadow-zinc-700 overflow-hidden">
       <div className="absolute top-2 right-2 bg-yellow-400 text-zinc-900 text-xs font-bold py-1 px-2 rounded-md shadow-md">
         Challenge {challenge}
       </div>
@@ -116,7 +116,7 @@ export const ChallengeCard = ({
           className="w-full h-1/2 object-cover"
           alt="Challenge Picture"
         />
-        <div className="flex flex-col w-full h-1/2 py-2 bg-zinc-950 text-yellow-400 gap-4">
+        <div className="flex flex-col w-full h-1/2 py-4 bg-zinc-950 text-yellow-400 justify-between">
           <h1 className="text-xl bg-black font-toony capitalize mr-4 pl-1">
             {name}
           </h1>
