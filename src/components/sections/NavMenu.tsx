@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { MenuButton } from "../ui/elements";
+import { useEffect, useState } from "react";
 
 export default function NavMenu() {
   const menuItems = [
@@ -9,6 +10,12 @@ export default function NavMenu() {
   ];
 
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
+  const screen = window.innerWidth;
+
+  useEffect(() => {
+    screen < 768 ? setIsOpen(false) : setIsOpen(true);
+  }, [screen]);
 
   return (
     <div className="flex w-full h-full justify-between items-center">
@@ -29,13 +36,42 @@ export default function NavMenu() {
         ))}
       </div>
       <div className="md:hidden flex w-10 h-10 p-2">
-        <button className="relative text-sm text-white hover:opacity-75 transition-all font-semibold">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="relative text-sm text-white hover:opacity-75 transition-all font-semibold"
+        >
           <img
-            className="w-full h-full"
+            className="w-full h-full p-1 bg-white rounded-md"
             src="/assets/menu-burger.png"
             alt="Menu Button"
           />
         </button>
+        <div
+          className={`fixed z-20 top-0 left-0 w-full ${
+            isOpen ? "h-1/2" : "h-0"
+          } flex flex-col bg-white shadow-lg shadow-zinc-900 transition-all overflow-hidden`}
+        >
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="relative w-10 h-10 p-2 text-sm text-white hover:opacity-75 transition-all font-semibold"
+          >
+            <img
+              className="w-full h-full"
+              src="/assets/close.png"
+              alt="Menu Button"
+            />
+          </button>
+          <div className="flex flex-col w-full h-full justify-center items-center gap-4">
+            {menuItems.map((item, index) => (
+              <Link className="w-2/3" key={index} to={item.path}>
+                <MenuButton
+                  title={item.title}
+                  isActive={location.pathname === item.path}
+                />
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

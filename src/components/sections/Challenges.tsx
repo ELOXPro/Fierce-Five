@@ -40,7 +40,7 @@ export default function Challenges() {
     },
     {
       name: "the plan was",
-      pic: "/assets/plan.png",
+      pic: "/assets/plans.png",
       url: "https://youtu.be/watch?v=JCBsgXtrhv0",
       challenge: "5",
       description:

@@ -4,7 +4,7 @@ export default function Problem() {
   return (
     <div className="flex flex-col w-full h-auto blue-bg justify-start">
       <SectionBorder />
-      <div className="flex flex-col md:flex-roww-full h-full gap-2 items-center">
+      <div className="flex flex-col md:flex-row w-full h-full gap-2 items-center">
         <div className="flex flex-col gap-6 w-full lg:w-1/2 p-6">
           <SectionTitle title="Problem Statement" />
           <h1 className="text-sm md:text-base text-pretty text-white">
@@ -30,7 +30,7 @@ export default function Problem() {
         </div>
         <div className="flex w-1/2 h-full justify-center">
           <img
-            className="w-2/3 h-auto"
+            className="w-full h-auto object-cover"
             src="/assets/problem.png"
             alt="Problem"
           />
