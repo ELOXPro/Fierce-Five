@@ -50,7 +50,7 @@ export default function Team() {
           <div className="flex w-full h-auto justify-center items-center">
             <img
               className="hidden md:flex w-1/3 h-auto glow-effect"
-              src="/assets/sticker.png"
+              src="/assets/sticker.webp"
               alt="Sticker"
             />
           </div>
@@ -64,7 +64,7 @@ export default function Team() {
             >
               <img
                 className="w-10 h-auto glow-effect hover:animate-pulse"
-                src="/assets/instagram.png"
+                src="/assets/instagram.webp"
                 alt="instagram"
               />
             </a>
@@ -74,7 +74,7 @@ export default function Team() {
             >
               <img
                 className="w-12 h-auto glow-effect hover:animate-pulse"
-                src="/assets/youtube.png"
+                src="/assets/youtube.webp"
                 alt="youtube"
               />
             </a>

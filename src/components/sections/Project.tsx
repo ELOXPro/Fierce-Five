@@ -18,7 +18,7 @@ export default function Project() {
           <a href="https://fierce5.netlify.app/projects" className="flex w-24 h-auto ml-2 justify-center items-center text-sm text-black hover:tracking-wide font-toony p-1 bg-yellow-400 transition-all rounded-md">Read More</a>
         </div>
         <img
-          src="/assets/curve.png"
+          src="/assets/curve.webp"
           className="hidden lg:flex w-1/2 h-full object-cover"
           alt="Challenge Picture"
         />

@@ -21,7 +21,7 @@ export default function NavMenu() {
     <div className="flex w-full h-full justify-between items-center">
       <img
         className="w-[10%] md:w-[8%] lg:w-[6%] h-full px-1 m-1 rounded-md bg-yellow-400"
-        src="/assets/logo.jpg"
+        src="/assets/logo.webp"
         alt="Logo"
       />
 
@@ -42,7 +42,7 @@ export default function NavMenu() {
         >
           <img
             className="w-full h-full p-1 bg-white rounded-md"
-            src="/assets/menu-burger.png"
+            src="/assets/menu-burger.webp"
             alt="Menu Button"
           />
         </button>
@@ -57,7 +57,7 @@ export default function NavMenu() {
           >
             <img
               className="w-full h-full"
-              src="/assets/close.png"
+              src="/assets/close.webp"
               alt="Menu Button"
             />
           </button>

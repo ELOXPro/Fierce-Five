@@ -31,7 +31,7 @@ export default function Problem() {
         <div className="flex w-1/2 h-full justify-center">
           <img
             className="w-full h-auto object-cover"
-            src="/assets/problem.png"
+            src="/assets/problem.webp"
             alt="Problem"
           />
         </div>

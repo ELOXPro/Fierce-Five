@@ -16,7 +16,7 @@ export default function Solution() {
         </h1>
         <img
           className="w-1/2 h-auto border-4 border-zinc-800 rounded-md"
-          src="/assets/plan.png"
+          src="/assets/plan.webp"
           alt="The Plan"
         />
       </div>

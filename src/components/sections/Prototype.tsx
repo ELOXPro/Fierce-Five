@@ -9,7 +9,7 @@ export default function Prototype() {
         <div className="flex w-full lg:w-1/2 h-full justify-center p-2">
           <img
             className="w-full lg:w-2/3 h-auto border-4 border-zinc-800 rounded-md"
-            src="/assets/prototype.jpg"
+            src="/assets/prototype.webp"
             alt="Menu Button"
           />
         </div>

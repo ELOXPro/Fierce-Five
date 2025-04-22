@@ -3,7 +3,7 @@ export default function Hero() {
     <div className="relative w-full h-screen flex flex-col overflow-hidden">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        src="/assets/hero back.mp4"
+        src="/assets/hero back.webm"
         autoPlay
         loop
         muted
@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="relative w-full h-full flex flex-col items-center justify-center z-10">
         <img
           className="absolute w-1/2 md:w-1/3 animate-spin-slow glow-effect"
-          src="/assets/globe.png"
+          src="/assets/globe.webp"
           alt="Spinning Globe"
         />
 

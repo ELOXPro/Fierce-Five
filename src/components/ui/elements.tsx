@@ -87,7 +87,7 @@ export const MemberCard = ({
           <h1 className="text-sm font-toony">{role}</h1>
         </div>
       </div>
-      <img className="w-full h-auto" src="/assets/road.jpg" alt="good road" />
+      <img className="w-full h-auto" src="/assets/road.webp" alt="good road" />
     </div>
   );
 };

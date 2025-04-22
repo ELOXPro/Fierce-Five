@@ -4,27 +4,27 @@ export default function Team() {
   const team = [
     {
       name: "benitha rugwiro",
-      imageUrl: "/assets/benitha.jpeg",
+      imageUrl: "/assets/benitha.webp",
       role: "team leader",
     },
     {
       name: "eloi iradukunda",
-      imageUrl: "/assets/eloi.jpg",
+      imageUrl: "/assets/eloi.webp",
       role: "tech manager",
     },
     {
       name: "nero kayonga",
-      imageUrl: "/assets/nero.jpg",
+      imageUrl: "/assets/nero.webp",
       role: "organiser",
     },
     {
       name: "julie uwineza",
-      imageUrl: "/assets/julie.JPG",
+      imageUrl: "/assets/julie.webp",
       role: "secretary",
     },
     {
       name: "shadrack nziza",
-      imageUrl: "/assets/shadrack.jpg",
+      imageUrl: "/assets/shadrack.webp",
       role: "finance manager",
     },
   ];

@@ -8,7 +8,7 @@ export default function Challenges() {
   const challenges = [
     {
       name: "the introduction",
-      pic: "/assets/team.png",
+      pic: "/assets/team.webp",
       url: "https://www.youtube.com/watch?v=qhQO7mpLKxU",
       challenge: "1",
       description:
@@ -16,7 +16,7 @@ export default function Challenges() {
     },
     {
       name: "orango tribe",
-      pic: "/assets/orango.jpg",
+      pic: "/assets/orango.webp",
       url: "https://www.youtube.com/watch?v=P-dFlBw5AW8",
       challenge: "2",
       description:
@@ -24,7 +24,7 @@ export default function Challenges() {
     },
     {
       name: "spreading education",
-      pic: "/assets/school.png",
+      pic: "/assets/school.webp",
       url: "https://www.youtube.com/watch?v=p5bHjZzQbjU",
       challenge: "3",
       description:
@@ -32,7 +32,7 @@ export default function Challenges() {
     },
     {
       name: "a visit in the mines",
-      pic: "/assets/mines.png",
+      pic: "/assets/mines.webp",
       url: "https://www.youtube.com/watch?v=oJaa9UWyUQU",
       challenge: "4",
       description:
@@ -40,7 +40,7 @@ export default function Challenges() {
     },
     {
       name: "the plan was",
-      pic: "/assets/plans.png",
+      pic: "/assets/plans.webp",
       url: "https://youtu.be/watch?v=JCBsgXtrhv0",
       challenge: "5",
       description:

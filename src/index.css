@@ -7,53 +7,53 @@
 }
 
 .div-border {
-  background: url("/assets/back.png") repeat;
+  background: url("/assets/back.webp") repeat;
   background-size: 12.5%;
 }
 
 .footer-border {
-  background: url("/assets/footer-border.png") repeat;
+  background: url("/assets/footer-border.webp") repeat;
   background-size: 25%;
 }
 
 
 .menu-button-bg {
-  background: url("/assets/back.png");
+  background: url("/assets/back.webp");
   background-size: 100%;
 }
 
 .green-title {
-  background: url("/assets/green arrowed button.png");
+  background: url("/assets/green arrowed button.webp");
   background-size: 100%;
 }
 
 .road-bg {
-  background: url("/assets/road-bg.jpg") repeat;
+  background: url("/assets/road-bg.webp") repeat;
   background-size: 50%;
 }
 
 .profile-bg {
-  background: url("/assets/back.png");
+  background: url("/assets/back.webp");
   background-size: 400%;
 }
 
 .title-bg {
-  background: url("/assets/yellow back.jpg") repeat;
+  background: url("/assets/yellow back.webp") repeat;
   background-size: 25%;
 }
 
 .orange-bg {
-  background: url("/assets/orange background.jpg") repeat;
+  background: url("/assets/orange background.webp") repeat;
   background-size: 100%;
 }
 
 .orange-bg2 {
-  background: url("/assets/orange background2.jpg") repeat;
+  background: url("/assets/orange background2.webp") repeat;
   background-size: 100%;
 }
 
 .blue-bg {
-  background: url("/assets/black background.jpg") repeat;
+  background: url("/assets/black background.webp") repeat;
   background-size: 100%;
 }
 
